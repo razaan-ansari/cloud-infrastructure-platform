@@ -1,0 +1,373 @@
+{
+  "version": 4,
+  "terraform_version": "1.14.3",
+  "serial": 197,
+  "lineage": "110d4f71-f790-7a28-cb04-3aa651447166",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "aws_eks_cluster",
+      "name": "cluster",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "access_config": [
+              {
+                "authentication_mode": "CONFIG_MAP",
+                "bootstrap_cluster_creator_admin_permissions": true
+              }
+            ],
+            "arn": "arn:aws:eks:us-east-1:872515279657:cluster/razan-fyp-cluster",
+            "certificate_authority": [
+              {
+                "data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCVENDQWUyZ0F3SUJBZ0lJWEVMaWMrMHBiUnd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TmpBeU1qY3dOak16TlRoYUZ3MHpOakF5TWpVd05qTTROVGhhTUJVeApFekFSQmdOVkJBTVRDbXQxWW1WeWJtVjBaWE13Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLCkFvSUJBUURlY0FRd3hMYmRLOUpFMFR6bEZzcmtQTDB3SXlNYjVlNGdEbHNFU1hub0tLMjFKbk1GK2NQczdrTHQKbm1yZGV3c1hXMmxkQmc4RVRoc1ROR0VuaDMxSjB2MGJPeFlld0xqOUVjK3ZoRENEbFZ5a1VqVCs5Y1Z0TzZqawpIMUFLQmtLalZmOGwrdDdmbWR0MFc2UnlyY2ZNa3dCWUpNbkJmSXpqVkdrZEZ0dEduRGtsM2NIaFJZOUFBTEh4CllXVE8vOEhManMrTzduQXFJUldCcms2dk9rNURKTCtyZHR4S1o5QzN6VjVFaktwdVloZEIvMTJBOXpLWnlPZGUKc2RCVzNUTG1VYnB2MXA3eUVDSkdzZlkzQTNxT2FHb2RrQVpRZWl3ODhlTlpFaDJHL3Y4bWVkYy9obllLM1lWNgp4cmdVQWhnT2c0dmVWRjlMUE5uYjg0RVIvSkVEQWdNQkFBR2pXVEJYTUE0R0ExVWREd0VCL3dRRUF3SUNwREFQCkJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJSL2VTOFkwK1FONkxlRDhVTmp4eFNTbFoxN0tUQVYKQmdOVkhSRUVEakFNZ2dwcmRXSmxjbTVsZEdWek1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQkhqNENvVmJicwpkYjMvRmVUT2NudmV3WEcwUFJEdmVnUmk1eUVoN2I1K2paMXpnTTNMMkZOWlVKaWlqWW1tWWpUZ2RZck5WWmN2CnRkVDJtSmVPa1lzS3FxVDFRUUdtT1FoTVNLM0tpSG1CaEdvM0IxK1V4dEdZKzllQ2JrRlVUYTdNdW44U3c1T3MKM1NZdG96NzEzdGk3anBJV2hCVnlxZis3bWRDYzhEa3p6QjJyUWYzZktIaFZsRVA5MjVoN01XWUVFZFNoeG1kcQpJL0RXbWZiUUJhZGcxZEx3Ynk5cVI5T0NGL3h2c1pQUFlZVHVQS1dPQUJnbFBYU1ZDd0g3TmlFMkpUNlhkdEFWCnN2RlEwQ3J4eWo4UWVHNnRlMFU0UU0rcjQ1UEQyYnlkOUZnY2ljWnpHeGxaYStHQ0tObDZNUzNoUGE4Nzg1QlIKSk1qVUFVb2VvYm5RCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+              }
+            ],
+            "cluster_id": null,
+            "compute_config": [
+              {
+                "enabled": false,
+                "node_pools": [],
+                "node_role_arn": ""
+              }
+            ],
+            "control_plane_scaling_config": [
+              {
+                "tier": "standard"
+              }
+            ],
+            "created_at": "2026-02-27T06:33:21Z",
+            "deletion_protection": false,
+            "enabled_cluster_log_types": [],
+            "endpoint": "https://3D0137E52D92F5648C9B8D917FF0C705.gr7.us-east-1.eks.amazonaws.com",
+            "id": "razan-fyp-cluster",
+            "identity": [
+              {
+                "oidc": [
+                  {
+                    "issuer": "https://oidc.eks.us-east-1.amazonaws.com/id/3D0137E52D92F5648C9B8D917FF0C705"
+                  }
+                ]
+              }
+            ],
+            "kubernetes_network_config": [
+              {
+                "elastic_load_balancing": [
+                  {
+                    "enabled": false
+                  }
+                ],
+                "ip_family": "ipv4",
+                "service_ipv4_cidr": "172.20.0.0/16",
+                "service_ipv6_cidr": ""
+              }
+            ],
+            "name": "razan-fyp-cluster",
+            "outpost_config": [],
+            "platform_version": "eks.5",
+            "region": "us-east-1",
+            "remote_network_config": [],
+            "role_arn": "arn:aws:iam::872515279657:role/fyp-eks-cluster-role",
+            "status": "ACTIVE",
+            "storage_config": [
+              {
+                "block_storage": [
+                  {
+                    "enabled": false
+                  }
+                ]
+              }
+            ],
+            "tags": {},
+            "upgrade_policy": [
+              {
+                "support_type": "EXTENDED"
+              }
+            ],
+            "version": "1.35",
+            "vpc_config": [
+              {
+                "cluster_security_group_id": "sg-04c628045f91b40a6",
+                "endpoint_private_access": false,
+                "endpoint_public_access": true,
+                "public_access_cidrs": [
+                  "0.0.0.0/0"
+                ],
+                "security_group_ids": [],
+                "subnet_ids": [
+                  "subnet-077ba0fa31c0026c2",
+                  "subnet-07e1ee64b42f0ed9d"
+                ],
+                "vpc_id": "vpc-05e62f808cf6f54d0"
+              }
+            ],
+            "zonal_shift_config": []
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "data",
+      "type": "aws_eks_cluster_auth",
+      "name": "cluster",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "razan-fyp-cluster",
+            "name": "razan-fyp-cluster",
+            "region": "us-east-1",
+            "token": "k8s-aws-v1.aHR0cHM6Ly9zdHMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vP0FjdGlvbj1HZXRDYWxsZXJJZGVudGl0eSZWZXJzaW9uPTIwMTEtMDYtMTUmWC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBNFdKUFdUTVVUSDRPWk40VyUyRjIwMjYwMjI3JTJGdXMtZWFzdC0xJTJGc3RzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAyMjdUMTYzNzQ3WiZYLUFtei1FeHBpcmVzPTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JTNCeC1rOHMtYXdzLWlkJlgtQW16LVNpZ25hdHVyZT04YjdmYzUxZjAxMzA1NDc1NWJlOTY0ZmQ2NDc2MjgyNDMyNzBiZmYwZWI2YzFkNjViNWE0ZTI4MjNmOWNmNGY4"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "token"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_internet_gateway",
+      "name": "gw",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:872515279657:internet-gateway/igw-0cdf2fa6a978fa272",
+            "id": "igw-0cdf2fa6a978fa272",
+            "owner_id": "872515279657",
+            "region": "us-east-1",
+            "tags": {},
+            "tags_all": {},
+            "timeouts": null,
+            "vpc_id": "vpc-05e62f808cf6f54d0"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "aws_vpc.main"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_subnet",
+      "name": "public_1",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:872515279657:subnet/subnet-07e1ee64b42f0ed9d",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "us-east-1a",
+            "availability_zone_id": "use1-az4",
+            "cidr_block": "10.0.1.0/24",
+            "customer_owned_ipv4_pool": "",
+            "enable_dns64": false,
+            "enable_lni_at_device_index": 0,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "id": "subnet-07e1ee64b42f0ed9d",
+            "ipv4_ipam_pool_id": null,
+            "ipv4_netmask_length": null,
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "ipv6_ipam_pool_id": null,
+            "ipv6_native": false,
+            "ipv6_netmask_length": null,
+            "map_customer_owned_ip_on_launch": false,
+            "map_public_ip_on_launch": true,
+            "outpost_arn": "",
+            "owner_id": "872515279657",
+            "private_dns_hostname_type_on_launch": "ip-name",
+            "region": "us-east-1",
+            "tags": {
+              "Name": "FYP-Subnet-1",
+              "kubernetes.io/role/elb": "1"
+            },
+            "tags_all": {
+              "Name": "FYP-Subnet-1",
+              "kubernetes.io/role/elb": "1"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-05e62f808cf6f54d0"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "872515279657",
+            "id": "subnet-07e1ee64b42f0ed9d",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.main"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_subnet",
+      "name": "public_2",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:872515279657:subnet/subnet-077ba0fa31c0026c2",
+            "assign_ipv6_address_on_creation": false,
+            "availability_zone": "us-east-1b",
+            "availability_zone_id": "use1-az6",
+            "cidr_block": "10.0.2.0/24",
+            "customer_owned_ipv4_pool": "",
+            "enable_dns64": false,
+            "enable_lni_at_device_index": 0,
+            "enable_resource_name_dns_a_record_on_launch": false,
+            "enable_resource_name_dns_aaaa_record_on_launch": false,
+            "id": "subnet-077ba0fa31c0026c2",
+            "ipv4_ipam_pool_id": null,
+            "ipv4_netmask_length": null,
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_association_id": "",
+            "ipv6_ipam_pool_id": null,
+            "ipv6_native": false,
+            "ipv6_netmask_length": null,
+            "map_customer_owned_ip_on_launch": false,
+            "map_public_ip_on_launch": true,
+            "outpost_arn": "",
+            "owner_id": "872515279657",
+            "private_dns_hostname_type_on_launch": "ip-name",
+            "region": "us-east-1",
+            "tags": {
+              "Name": "FYP-Subnet-2",
+              "kubernetes.io/role/elb": "1"
+            },
+            "tags_all": {
+              "Name": "FYP-Subnet-2",
+              "kubernetes.io/role/elb": "1"
+            },
+            "timeouts": null,
+            "vpc_id": "vpc-05e62f808cf6f54d0"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "872515279657",
+            "id": "subnet-077ba0fa31c0026c2",
+            "region": "us-east-1"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "aws_vpc.main"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_vpc",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-east-1:872515279657:vpc/vpc-05e62f808cf6f54d0",
+            "assign_generated_ipv6_cidr_block": false,
+            "cidr_block": "10.0.0.0/16",
+            "default_network_acl_id": "acl-0ec70405b36bcfe3f",
+            "default_route_table_id": "rtb-052ff7982d16d4e1f",
+            "default_security_group_id": "sg-0cff94d131c125787",
+            "dhcp_options_id": "dopt-02eea8e825f1a687b",
+            "enable_dns_hostnames": true,
+            "enable_dns_support": true,
+            "enable_network_address_usage_metrics": false,
+            "id": "vpc-05e62f808cf6f54d0",
+            "instance_tenancy": "default",
+            "ipv4_ipam_pool_id": null,
+            "ipv4_netmask_length": null,
+            "ipv6_association_id": "",
+            "ipv6_cidr_block": "",
+            "ipv6_cidr_block_network_border_group": "",
+            "ipv6_ipam_pool_id": "",
+            "ipv6_netmask_length": 0,
+            "main_route_table_id": "rtb-052ff7982d16d4e1f",
+            "owner_id": "872515279657",
+            "region": "us-east-1",
+            "tags": {
+              "Name": "FYP-VPC"
+            },
+            "tags_all": {
+              "Name": "FYP-VPC"
+            }
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "account_id": "872515279657",
+            "id": "vpc-05e62f808cf6f54d0",
+            "region": "us-east-1"
+          },
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "kubernetes_namespace",
+      "name": "chaos_mesh",
+      "provider": "provider[\"registry.terraform.io/hashicorp/kubernetes\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "chaos-mesh",
+            "metadata": [
+              {
+                "annotations": {},
+                "generate_name": "",
+                "generation": 0,
+                "labels": {},
+                "name": "chaos-mesh",
+                "resource_version": "3558",
+                "uid": "004fb1ac-c414-485e-af71-63e8d1b759c2"
+              }
+            ],
+            "timeouts": null,
+            "wait_for_default_service_account": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 1,
+          "identity": {
+            "api_version": "v1",
+            "kind": "Namespace",
+            "name": "chaos-mesh"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjozMDAwMDAwMDAwMDB9fQ==",
+          "dependencies": [
+            "data.aws_eks_cluster.cluster",
+            "data.aws_eks_cluster_auth.cluster"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

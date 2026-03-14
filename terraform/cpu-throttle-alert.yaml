@@ -1,0 +1,23 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: flask-cpu-throttle-alert
+  namespace: monitoring
+  labels:
+    release: monitoring
+spec:
+  groups:
+  - name: flask.rules
+    rules:
+    - alert: FlaskCPUThrottlingHigh
+      expr: |
+        rate(container_cpu_cfs_throttled_periods_total{container="flask-app",namespace="default"}[5m])
+        /
+        rate(container_cpu_cfs_periods_total{container="flask-app",namespace="default"}[5m])
+        > 0.25
+      for: 1m
+      labels:
+        severity: warning
+      annotations:
+        summary: "Flask app CPU throttling is high"
+        description: "Flask app is being CPU throttled. Chaos experiment may be active."

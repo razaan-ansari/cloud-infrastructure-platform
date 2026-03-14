@@ -1,0 +1,23 @@
+apiVersion: monitoring.coreos.com/v1alpha1
+kind: AlertmanagerConfig
+metadata:
+  name: gmail-config
+  namespace: monitoring
+  labels:
+    alertmanagerConfig: main
+spec:
+  route:
+    receiver: 'gmail-notifications'
+    groupWait: 30s
+    groupInterval: 5m
+    repeatInterval: 1h
+  receivers:
+  - name: 'gmail-notifications'
+    emailConfigs:
+    - to: 'razaan330@gmail.com'
+      from: 'razaan330@gmail.com'
+      smarthost: 'smtp.gmail.com:587'
+      authUsername: 'razaan330@gmail.com'
+      authPassword:
+        name: alertmanager-monitoring-kube-prometheus-alertmanager
+        key: alertmanager.yaml # This uses the secret we just patched

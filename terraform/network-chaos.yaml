@@ -1,0 +1,18 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  name: network-delay
+  namespace: chaos-mesh
+spec:
+  action: delay
+  mode: one
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: flask-app
+  delay:
+    latency: "200ms"
+    correlation: "25"
+    jitter: "0ms"
+  duration: "10m"
