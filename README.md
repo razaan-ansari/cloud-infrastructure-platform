@@ -25,7 +25,7 @@ This project is actively being developed and improved.
 ![Python](https://img.shields.io/badge/App-Python-green)
 
 ## Overview
-This project demonstrates cloud-native application resilience testing using Chaos Engineering principles on AWS Elastic Kubernetes Service (EKS). The system intentionally injects failures into a running application to validate its ability to withstand and recover from real-world disruptions — similar to Netflix's Chaos Monkey approach.
+This project demonstrates cloud-native application resilience testing using Chaos Engineering principles on AWS Elastic Kubernetes Service (EKS). The system intentionally injects failures into a running application to validate its ability to withstand and recover from real-world disruptions similar to Netflix's Chaos Monkey approach.
 
 ## Architecture
 ```
