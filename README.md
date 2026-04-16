@@ -120,18 +120,8 @@ duration: 5m
 - FlaskCPUThrottlingHigh alert firing
 - Email notification via Gmail SMTP
 
-### Experiment 2 — Network Delay Test
-```yaml
-action: delay
-latency: 200ms
-duration: 10m
-```
-**Tests:**
-- Application availability under network degradation
-- Realistic simulation of cross-region latency
-- System behaviour under degraded network conditions
 
-### Experiment 3 — Self Healing
+### Experiment 2 — Self Healing
 ```bash
 kubectl delete pod <pod-name> -n default
 ```
