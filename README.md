@@ -67,7 +67,7 @@ This project demonstrates cloud-native application resilience testing using Chao
 ## Technologies Used
 | Technology | Version | Purpose |
 |---|---|---|
-| AWS EKS | 1.29 | Managed Kubernetes cluster |
+| AWS EKS | 1.33 | Managed Kubernetes cluster |
 | Terraform | >= 1.0 | Infrastructure as Code |
 | Docker | Latest | Application containerization |
 | Flask | 2.x | Python web application |
